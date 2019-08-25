@@ -314,6 +314,7 @@ h1{
 .skills{
     margin-left: 20%;
     margin-top: 50px;
+    clear: both;
 }
 
 #Contact h1{
