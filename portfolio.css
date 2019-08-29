@@ -35,7 +35,10 @@ nav{
 
 }
 
-
+.aboutLine{
+    margin-left: 0;
+    width: 50px;
+}
 
 .listnav{
     display: inline;
