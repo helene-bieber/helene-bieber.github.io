@@ -17,10 +17,14 @@
     
 <nav>
           <ul>
-            <li class="listnav"><a class="navMenu" href="index.html#top">HELENE BIEBER</a></li>
-                 <li class="listnav right"> <a class="navMenu" href="index.html#AboutMe">About</a> </li>
-                 <li class="listnav right"> <a class="navMenu" href="index.html#PortFolio">Projects</a> </li>
-                 <li class="listnav right"> <a class="navMenu" href="index.html#Contact">Contact</a> </li>
+             <div class="topnav" id="myTopnav">
+            <li class="listnav"><a class="navMenu name" href="#top">HELENE BIEBER</a></li>
+               
+                 <li class="listnav right"> <a class="navMenu" href="#AboutMe">About</a> </li>
+                 <li class="listnav right"> <a class="navMenu" href="#PortFolio">Projects</a> </li>
+                 <li class="listnav right"> <a class="navMenu" href="#Contact">Contact</a> </li>
+                   <a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
           </ul>
       </nav>
   <div class="full-container"> 
@@ -100,6 +104,15 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+}
+    
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
 </script>
 
