@@ -9,57 +9,65 @@
     <meta name="author" content="Helene Bieber">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="portfolio.css">
-    <link rel="icon" href="hb1.png" type="image/png" />
+    <link rel="icon" href="image/hb1.png" type="image/png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158292963-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-158292963-1');
+    </script>
+
 
 </head>
 <body class="bodyProject">
 
     
-<nav>
-          <ul>
+ <nav>
+         <ul>
              <div class="topnav" id="myTopnav">
-            <li class="listnav"><a class="navMenu name" href="#top">HELENE BIEBER</a></li>
-               
-                 <li class="listnav right"> <a class="navMenu" href="#AboutMe">About</a> </li>
-                 <li class="listnav right"> <a class="navMenu" href="#PortFolio">Projects</a> </li>
-                 <li class="listnav right"> <a class="navMenu" href="#Contact">Contact</a> </li>
-                   <a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="myFunction()">&#9776;</a>
-              </div>
+            <li class="listnav"> <a href="index.html#AboutMe">About</a> </li>
+            <li class="listnav"> <a href="index.html#Projects" class="projectLink">Projects</a> </li>
+            <li class="listnav"> <a href="#index.html#Contact">Contact</a> </li>
+              <a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="myFunction()">&#9776;</a>
+             </div>
           </ul>
-      </nav>
-  <div class="full-container"> 
-<div class="slideshow-container">
+    </nav>     
+              <div class="full-container"> 
+            <div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 5</div>
-  <img class="imgproject1" src="projectImage1.png" style="width:80%" alt="project slide 1">
-  <div class="caption">The user can enter the data to secure.</div>
-</div>
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img class="imgproject1" src="image/projectImage1.png" style="width:80%" alt="project slide 1">
+              <div class="caption">The user can enter the data to secure.</div>
+            </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 5</div>
-  <img class="imgproject1" src="projectImage2.png" style="width:80%" alt="project slide 2">
-  <div class="caption">If one of the data is not valid, a specific error message appear in the result window.</div>
-</div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img class="imgproject1" src="image/projectImage2.png" style="width:80%" alt="project slide 2">
+              <div class="caption">If one of the data is not valid, a specific error message appear in the result window.</div>
+            </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 5</div>
-  <img class="imgproject1" src="projectImage3.png" style="width:80%" alt="project slide 3">
-  <div class="caption">If the data got successfully secured, a successful message appear in the result window with a seal hash. The user can verify his data using the data hash and the seal hash provided.</div>
-</div>
-    
-<div class="mySlides fade">
-  <div class="numbertext">4 / 5</div>
-  <img class="imgproject1" src="projectImage4.png" style="width:80%" alt="project slide 4">
-  <div class="caption">If the seal hash and data hash combination isn't valid, an error message appear in the result window.</div>
-</div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img class="imgproject1" src="image/projectImage3.png" style="width:80%" alt="project slide 3">
+              <div class="caption">If the data got successfully secured, a successful message appear in the result window with a seal hash. The user can verify his data using the data hash and the seal hash provided.</div>
+            </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">5 / 5</div>
-  <img class="imgproject1" src="projectImage5.png" style="width:80%" alt="project slide 5">
-  <div class="caption">If the combination is successful, the user can verify his data.</div>
-</div>
-    
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 5</div>
+              <img class="imgproject1" src="image/projectImage4.png" style="width:80%" alt="project slide 4">
+              <div class="caption">If the seal hash and data hash combination isn't valid, an error message appear in the result window.</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 5</div>
+              <img class="imgproject1" src="image/projectImage5.png" style="width:80%" alt="project slide 5">
+              <div class="caption">If the combination is successful, the user can verify his data.</div>
+            </div>
+
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -74,7 +82,7 @@
   <span class="dot" onclick="currentSlide(5)"></span> 
 </div>
     </div>
-     <a class="buttonBack" href="index.html#PortFolio">Back to the projects</a>
+     <a class="buttonBack" href="index.html#Projects">Back to the projects</a>
 <footer>
            <p>&copy;2019 Helene Bieber </p>
        </footer>

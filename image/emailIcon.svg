@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220px" height="220px" viewBox="0 0 220 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M40.5,199.5 L180.5,200.5" id="Line" stroke="#000000" stroke-linecap="square"></path>
+        <path d="M40.5,199.5 L40.5,100.5" id="Line-2" stroke="#000000" stroke-linecap="square"></path>
+        <path d="M180.5,199.5 L181,100.5" id="Line-2" stroke="#000000" stroke-linecap="square"></path>
+        <path d="M40.5,100.5 L100.5,147.5" id="Line-3" stroke="#000000" stroke-linecap="square"></path>
+        <path d="M181,100.5 L119.5,148" id="Line-4" stroke="#000000" stroke-linecap="square"></path>
+        <polygon id="Triangle" stroke="#000000" fill="#FFFFFF" points="110.5 140 181 200 40 200"></polygon>
+        <path d="M60.5,115.5 L60.5,60.5" id="Line-5" stroke="#000000" stroke-linecap="square"></path>
+        <path d="M160,116.5 L160,60.5" id="Line-5" stroke="#000000" stroke-linecap="square"></path>
+        <path d="M60.5,60.5 L160,60.5" id="Line-6" stroke="#000000" stroke-linecap="square"></path>
+        <path d="M40.5,100.5 L60.5,79.5" id="Line-7" stroke="#000000" stroke-linecap="square"></path>
+        <path d="M181,100.5 L160,79" id="Line-8" stroke="#000000" stroke-linecap="square"></path>
+        <text id="@" font-family="LucidaGrande, Lucida Grande" font-size="40" font-weight="normal" fill="#000000">
+            <tspan x="93" y="111">@</tspan>
+        </text>
+    </g>
+</svg>

@@ -1,4 +1,3 @@
-* {box-sizing: border-box}
 html {
    scroll-behavior: smooth;
 }
@@ -6,205 +5,67 @@ html {
 body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    background-color: #832232;
 }
 
-
-nav{
-    background-color: white;
-    border-bottom: solid 1px gainsboro;
-    z-index: 1;
-    position: fixed;
-    width: 100%;
-    line-height: 20px;
+.bodyProject{
+    background-color: #2B303A;
 }
 
-
-.navMenu{
-    text-decoration: none;
-    color: #B59DA4;
-}
-
-.listnav{
-    display: inline;
-}
-
-
-
-footer p{
-    margin: 0;
-    margin-left: 10px;
-}
-
-footer{
-   padding: 15px 0;
-     background-color: black;
-    color: white;
-}
-
-#top{
+header{
     height: 100vh;
-    background-image: url(binaryImage.png);
-    background-repeat: no-repeat;
+    background-color: #2B303A;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.centerSquareHeader{
+    background-image: url(image/BgBlur.png);
+    position: absolute;
     background-size: cover;
-    position: relative;
-    clear: both;
-
+    background-repeat: no-repeat;
+    top: 60%;
+    left: 10%;
+    right: 10%;
+    border: 3px solid white;
+    height: 60%;
 }
-
-
-
-.greeting{
-    color: white;
-}
-
-
-.presentationtitle span{
-    color: #B59DA4;  
-}
-
-.presentationtext{
-    color: white;
-}
-
-
-.arrow:hover {  
-  border-color:#B59DA4;
-  transition: all .2s ease-in-out;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.blinking-cursor {
-  font-weight: 100;
-  font-size: 150%;
-  color: #2E3D48;
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
-}
-
-@keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: #B59DA4;
-  }
-}
-
-@-moz-keyframes blink {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: #B59DA4;
-  }
-}
-
-@-webkit-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: #B59DA4;
-  }
-}
-
-@-ms-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: #B59DA4;
-  }
-}
-
-@-o-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: #B59DA4;
-  }
-}
-
-.bold{
-    font-weight: 1000;
-    font-size: 130%;
-}
-
-.resume{
-    color: gainsboro;
-    text-decoration: none;
-    border: solid 2px gainsboro;
-}
-
-.resume:hover{
-    color:white;
-    border: solid 3px white;
-    transition: all .3s ease-in-out;
-}
-
-.skilllist{
-    list-style-image: url("good.gif");
-    color: black;
-}
-
-.demolink{
-    text-decoration: none;
-    color: #484848;
-    font-weight: bolder;
-}
-
-#PortFolio{
-    background-color: #f5f5f5;
-    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
-    width:100%;
-    height:auto;
-    position: relative;
-    padding-top: 5px;
-}
-
-.firstrow{
-    margin-top: 150px;
-}
-
-
-.grid1{
-    grid-row: 1 / 2;
-    grid-column: 1 / 2; 
-    position: relative;
-}
-
-.grid2{
-    grid-row: 1/ 2;
-    grid-column: 2 / 2;
-     position: relative;
-}
-
-.grid3{
-    grid-row: 2/ 2;
-    grid-column: 1 / 2;
-     position: relative;
-}
-
-.grid4{
-     position: relative;
-}
-
 
 h1{
-     font-size: 400%;
+    color: #F6F930;
+    padding-top: 10%;
+    font-weight: 800;
+    margin-top: 0;
+    font-size: 500%;
+    margin-left: 20px;
+}
+
+h2{
+     color: white;
+    font-weight: 900;
     text-align: center;
-    color:  black;
-    position: relative;
+    font-size: 40px;
+    margin-top: 5%;
+
+}
+
+.presentationtitle{
+    margin-top: 10%;
+    color:#832232;
+    font-weight: 900;
+    text-align: center;
+    font-size: 150%;
+}
+
+#AboutMe{
+    padding-top: 15%;
+    background-color: #832232;
+    padding-bottom: 20px;
 }
 
 
@@ -212,68 +73,104 @@ h1{
     margin-left: 20%;
     margin-top: 100px;
     clear: both;
+    color: white;
 }
 
-#Contact h1{
-     margin-top: 0;
-    padding-top: 70px;
+.skilllist{
+    list-style-type: none;
 }
 
-#PortFolio h1{
-   margin-top: 70px;
-    margin-bottom: 50px;
+
+#Projects{
+     background-color: #2B303A;
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    width:100%;
+    position: relative;
+    padding-top: 5px;
+    display: block;
+    overflow: auto;
+    padding-bottom:70px;
 }
 
-.card1, .card3{
-   right: 10px;  
+#Projects h2{
+    color: black;
+    font-size: 160%;
+    font-size: 900;
 }
 
-.card2, .card4{
-    left: 10px;
+.wrapperCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
-.image {
-    background-repeat:   no-repeat;
-    background-size:     cover;
-    border-radius: 4px;
+.card{
+    background-color: white;
+    border-radius: 8px;
+    width: 370px;
+    display: inline-block;
+    box-shadow:  0 1px 5px black;
+    padding: 10px;
+    margin: 20px;
 }
 
-.middle {
-    border: solid 1px black;
-     border-radius: 3px;
+.card:hover{
+    box-shadow:  0 1px 20px black;
 }
 
-.titleCard {
-   text-align: center;
-  color: black;
-  font-size: 130%;
-  padding: 16px 32px;
-    font-weight: 600;
+
+
+.card > img{
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.arrowCard{
-   display: block;
-   margin-left: 40%;
-    bottom:25px;
-    position: absolute;
+.card > p{
+    margin-bottom: 20px;
+    font-size: 15px;
 }
 
-.arrowCard:hover{
-     filter: invert(96%) sepia(0%) saturate(6359%) hue-rotate(281deg) brightness(113%) contrast(104%);
+
+.card > a{
+    background-color: #832232;;
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 8px;
+    box-shadow:  0 1px 5px rgba(0, 0, 0, 0.2);
+    transition: all .2s ease-in;
+    -moz-transition:all .2s ease-in;
+    -o-transition:all .2s ease-in;
+    -webkit-transition:all .2s ease-in;
 }
 
-.textCard{
-    margin-top: 0;
-    margin-left: 10px;
-      color: black;
-
+.tools{
+    color:#832232;
+    font-weight: 1000;
+    word-spacing: 3px;
+    font-size: 17px !important;
 }
 
+.card > a:hover{
+     background:#681b28;
+     box-shadow:  0 1px 5px rgba(0, 0, 0, 0.8);
+}
 
 #Contact{
    background-color:white;
     top:0;
     padding-bottom: 170px;
+}
+
+#Contact h1{
+    color:#832232;
+    text-align: center;
 }
 
 
@@ -282,79 +179,126 @@ h1{
     color: black;
 }
 
-/* visited link */
-#Contact a:visited {
-  color: black;
-}
-
-/* mouse over link */
-#Contact a:hover {
-  color: black;
-}
-
-/* selected link */
-#Contact a:active {
-  color: black;
-}
 
 #Contact img{
     width: 150px;
 }
 
 
+footer{
+   background-color:  #2B303A;
+}
+
+footer p{
+    margin: 0;
+    padding: 10px;
+    color: white;
+}
+
 @media only screen
     and (max-width : 480px){
-        
-        .greeting{
-            font-size: 250%;
-            padding-top: 10%;
-            text-align: center;
-        }
-        
-        .presentationtext{
-            text-align: center;
-        }
-        
-        .right{
+        .centerSquareHeader{
             display: none;
         }
-        .topnav a.icon {
+        
+        header{
+            height: auto;
+            padding-bottom: 20px;
+        }
+        
+        .aboutLine{
+            margin-left: 20px;
+        }
+        
+         h1{
+            font-size: 300%;
+        }
+        header h{
+            font-size: 300%;
+        }
+        
+        #Projects{
+            padding-top: 40%;
+        }
+        
+        #Contact img{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        figcaption{
+            text-align: center;
+        }
+        
+        footer p{
+            padding-bottom: 50px;
+        }
+}
+
+
+@media only screen
+    and (max-width : 959px){
+
+  .topnav a.icon {
             float: right;
             display: block;
             text-decoration: none;
-            color: #B59DA4;
+            color: white;
+            margin-right: 20px;
+            margin-top: 0;
         }
         
         .topnav.responsive {position: relative;}
           .topnav.responsive .icon {
             position: absolute;
             float: right;
-            top: -2px;
+            top: 0;
             right: 0;
           }
         
           .topnav.responsive li {
             float: none;
             display: block;
-            text-align: left;
+            text-align: right;
               font-size: 150%;
               margin: 15px;
+              color: white; 
+              margin-top: 0;
           }
+        
+        .topnav.responsive li:first-of-type {
+            padding-top: 40px;
+          }
+        
           .topnav.responsive{float: none;}
           .topnav.responsive {position: relative;}
           .topnav.responsive {
             display: block;
             width: 100%;
-            text-align: left;
+           
           }
+        .listnav{
+            display: none;
+        }
         
-        .aboutPic{
-            width: 60%;
+        nav {
+            margin-top: 0;
+        }
+        
+        nav ul{
+            margin: 0;
+        }
+        
+
+        #AboutMe img{
+            width: 40%;
             height: auto;
             display: block;
             margin: auto;
-          
+           margin-top: 60px;
         }
+     
         
         .aboutLine{
             margin-left: 20px;
@@ -364,7 +308,7 @@ h1{
 
         .titleAbout{
             font-size: 200%;
-            color: #B59DA4;
+            color: white;
     
         }
         
@@ -374,909 +318,142 @@ h1{
             margin: 5%;
             font-size: 100%;
             line-height: 25px;
-      
+            color: white;
         }
-        
-        .skills{
-            display: block;
-            margin-left: 20%;
-            margin-top: 0;
-        
-        }
-        
-        .wrapperCard{
-            display: unset;
-            padding-bottom: 600px;
-        }
+         .logo {
+                    display: inline-block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: 30px; 
+                }
 
-
+                #imageContact{
+                    text-align:center;
+                }
         
-        .card{
-            max-width:90%;
-            max-height: 100%;
-            box-shadow: 5px 10px 6px #5A5E61;
-            margin: auto;
-            display: flex;
-            position: relative;
-            margin-bottom: 20px;
-
-        }
-    
-        .card1, .card3{
-           right: auto;  
-        }
-
-        .card2, .card4{
-            left: auto;
-        }
-
-        #PortFolio{
-            padding-bottom: 100px;
-        }
-        
-        .image {
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 4px;
-            max-height: 100%;
-            max-width: 100%;
-        }
-        
-        .image {
-          opacity: 0.2;
-          display: block;
-          width: 100%;
-            height: 250px;
-          transition: .5s ease;
-          backface-visibility: hidden;
-
-        }
-        
-        .middle {
-          transition: .5s ease;
-          opacity: 1;
-          position: absolute;
-            left: 30%;
-            margin-left: 20%;
-            width: 90%;
-            top: 50%;
-            height: 90%;
-          transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-        }
-        
-        .arrowCard{
-            display: none;
-        }
-        
-        .middle >* {
-            font-size: 10%;
-        }
-        
-        #Contact img{
-            width: 150px;
-            display: block;
-            margin: auto;
-        }
-        
-        figcaption{
-            text-align: center;
-        }
-        
-        #Contact{
-           padding-bottom: 0;
-        }
-        
-        .flexDiv{
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .presentationtext{
-            order: 1;
-            margin-top: 40px;
-        }
-        
-        .presentationtitle{
-            order: 2;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        #top{
-            padding-top: 50px;
-            padding-bottom: 150px;
-            height: auto;
-        }
-        
-        .resume{
-            display: block;
-            margin: auto;
-            font-size: 100%;
-            padding: 7px;
-            border-radius: 8px;
-            width: 60%;
-        }
-        
-        
-        .arrow {
-          box-sizing: border-box;
-          height: 4vw;
-          width: 4vw;
-          border-style: solid;
-          border-color: white;
-          border-width: 0px 5px 5px 0px;
-          transform: rotate(45deg);
-            position: absolute;
-            bottom: 10%;  
-        }
-        
-        a.resume{
-            text-align: center;
-        }
-        
-        .titleCard{
-            font-size: 140%;
-        }
-        
-        .textCard{
-            font-size: 110%;
-        }
-        
-        .icon{
-            float: right;
-            margin-right: 5%;
-            text-decoration: none;
-            color: #B59DA4;
-            margin-top: -5px;
-        }
-        
-        .name{
-            font-size: 30px;
-        }
-
+                .icon {
+                  display: none;
+                }
 
 }
 
-@media only screen
-and (min-width : 481px)
-    and (max-width : 740px){
-        
 
-        
-        .logo {
-            display: inline-block;
-            margin-left: auto;
-            margin-right: auto;
-            height: 30px; 
-        }
-
-        #imageContact{
-            text-align:center;
-            padding-bottom: 50px;
-        }
-        
-        h1{
-            margin -bottom: 0;
-        }
-
-        
-         .greeting{
-            font-size: 250%;
-            padding-top: 10%;
-            text-align: center;
-        }
-        
-        .presentationtext{
-            text-align: center;
-        }
-        
-        .right{
-            display: none;
-        }
-        .topnav a.icon {
-            float: right;
-            display: block;
-            text-decoration: none;
-            color: #B59DA4;
-        }
-        
-        .topnav.responsive {position: relative;}
-          .topnav.responsive .icon {
-            position: absolute;
-            float: right;
-            top: -2px;
-            right: 0;
-          }
-        
-          .topnav.responsive li {
-            float: none;
-            display: block;
-            text-align: left;
-              font-size: 150%;
-              margin: 15px;
-          }
-          .topnav.responsive{float: none;}
-          .topnav.responsive {position: relative;}
-          .topnav.responsive {
-            display: block;
-            width: 100%;
-            text-align: left;
-          }
-        
-        .aboutPic{
-            width: 40%;
-            height: auto;
-            display: block;
-            margin: auto;
-          
-        }
-        
-        .aboutLine{
-            margin-left: 30px;
-            width: 50px;
-        
-        }
-
-        .titleAbout{
-            font-size: 200%;
-            color: #B59DA4;
-    
-        }
-        
-        .textAbout{
-            display: block;
-            margin: auto;
-            margin: 5%;
-            font-size: 100%;
-            line-height: 25px;
-      
-        }
-        
-        .skills{
-            display: block;
-            margin-left: 20%;
-            margin-top: 0;
-        
-        }
-        
-               .wrapperCard{
-            display: unset;
-            padding-bottom: 600px;
-        }
-
-
-        
-        .card{
-            max-width:70%;
-            max-height: 100%;
-            box-shadow: 5px 10px 6px #5A5E61;
-            margin: auto;
-            display: flex;
-            position: relative;
-            margin-bottom: 20px;
-
-        }
-    
-        .card1, .card3{
-           right: auto;  
-        }
-
-        .card2, .card4{
-            left: auto;
-        }
-
-        #PortFolio{
-            padding-bottom: 100px;
-        }
-        
-        .image {
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 4px;
-            max-height: 100%;
-            max-width: 100%;
-        }
-        
-        .image {
-          opacity: 0.2;
-          display: block;
-          width: 100%;
-            height: 250px;
-          transition: .5s ease;
-          backface-visibility: hidden;
-
-        }
-        
-        .middle {
-          transition: .5s ease;
-          opacity: 1;
-          position: absolute;
-            left: 30%;
-            margin-left: 20%;
-            width: 90%;
-            top: 50%;
-            height: 90%;
-          transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-        }
-        
-        
-        .arrowCard{
-            display: none;
-        }
-        
-        .middle >* {
-            font-size: 100%;
-        }
-        
-        .middle >skilllist {
-            line-height: 0;
-        }
-        
-        #Contact img{
-            width: 150px;
-            display: block;
-            margin: auto;
-        }
-        
-        figcaption{
-            text-align: center;
-        }
-        
-        #Contact{
-           padding-bottom: 0;
-        }
-        
-        .flexDiv{
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .presentationtext{
-            order: 1;
-            margin-top: 40px;
-        }
-        
-        .presentationtitle{
-            order: 2;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        #top{
-            padding-top: 50px;
-            padding-bottom: 150px;
-            height: auto;
-        }
-        
-        .resume{
-            display: block;
-            margin: auto;
-            font-size: 100%;
-            padding: 7px;
-            border-radius: 8px;
-            width: 40%;
-        }
-        
-        
-        .arrow {
-          box-sizing: border-box;
-          height: 4vw;
-          width: 4vw;
-          border-style: solid;
-          border-color: white;
-          border-width: 0px 5px 5px 0px;
-          transform: rotate(45deg);
-            position: absolute;
-            bottom: 10%;  
-        }
-        
-        a.resume{
-            text-align: center;
-        }
-        
-        .titleCard{
-            font-size: 140%;
-        }
-        
-        .textCard{
-            font-size: 110%;
-        }
-        
-        .icon{
-            float: right;
-            margin-right: 5%;
-            text-decoration: none;
-            color: #B59DA4;
-            margin-top: -5px;
-        }
-        
-        .name{
-            font-size: 30px;
-        }
-        
-        .skilllist{
-            line-height: 30px;
-            columns: 2;
-          -webkit-columns: 2;
-          -moz-columns: 2;
-        }
-
-        
-}
-
-
-@media only screen
-and (min-width : 741px)
-    and (max-width : 959px){
-        
-        .wrapperCard{
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: auto auto;
-            height: 750px;
-            padding-bottom: 100px;
-        }
-
-        
-        .logo {
-            display: inline-block;
-            margin-left: auto;
-            margin-right: auto;
-            height: 30px; 
-        }
-
-        #imageContact{
-            text-align:center;
-            padding-bottom: 50px;
-        }
-        
-        h1{
-            margin -bottom: 0;
-        }
-
-        
-         .greeting{
-            font-size: 250%;
-            padding-top: 10%;
-            text-align: center;
-        }
-        
-        .presentationtext{
-            text-align: center;
-        }
-        
-        .right{
-            display: none;
-        }
-        .topnav a.icon {
-            float: right;
-            display: block;
-            text-decoration: none;
-            color: #B59DA4;
-        }
-        
-        .topnav.responsive {position: relative;}
-          .topnav.responsive .icon {
-            position: absolute;
-            float: right;
-            top: -2px;
-            right: 0;
-          }
-        
-          .topnav.responsive li {
-            float: none;
-            display: block;
-            text-align: left;
-              font-size: 150%;
-              margin: 15px;
-          }
-          .topnav.responsive{float: none;}
-          .topnav.responsive {position: relative;}
-          .topnav.responsive {
-            display: block;
-            width: 100%;
-            text-align: left;
-          }
-        
-        .aboutPic{
-            width: 40%;
-            height: auto;
-            display: block;
-            margin: auto;
-          
-        }
-        
-        .aboutLine{
-            margin-left: 40px;
-            width: 50px;
-        
-        }
-
-        .titleAbout{
-            font-size: 200%;
-            color: #B59DA4;
-    
-        }
-        
-        .textAbout{
-            display: block;
-            margin: auto;
-            margin: 5%;
-            font-size: 100%;
-            line-height: 25px;
-      
-        }
-        
-        .skills{
-            display: block;
-            margin-left: 20%;
-            margin-top: 0;
-        
-        }
-        
-        .wrapperCard{
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: auto auto;
-            height: 750px;
-            padding-bottom: 100px;
-        }
-
-
-        .card{
-            width:350px;
-            height: 280px;
-            box-shadow: 5px 10px 6px #5A5E61;
-            margin: auto;
-            display: flex;
-            position: absolute;
-
-        }    
-
-        .card1, .card3{
-           right: 10px;  
-        }
-
-        .card2, .card4{
-            left: 10px;
-        }
-
-        #PortFolio{
-            padding-bottom:0;
-        }
-        
-       
-        
-        .image {
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 4px;
-            max-height: 100%;
-            max-width: 100%;
-        }
-        
-        .image {
-          opacity: 0.2;
-          display: block;
-          width: 100%;
-            height: 100%;
-          transition: .5s ease;
-          backface-visibility: hidden;
-
-        }
-        
-        .middle {
-          transition: .5s ease;
-          opacity: 1;
-          position: absolute;
-            left: 30%;
-            margin-left: 20%;
-            width: 90%;
-            top: 50%;
-            height: 90%;
-          transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-        }
-        
-        .arrowCard{
-            display: none;
-        }
-        
-        .middle >* {
-            font-size: 100%;
-        }
-        
-        .middle >skilllist {
-            line-height: 0;
-        }
-        
-        #Contact img{
-            width: 150px;
-            display: block;
-            margin: auto;
-        }
-        
-        figcaption{
-            text-align: center;
-        }
-        
-        #Contact{
-           padding-bottom: 0;
-        }
-        
-        .flexDiv{
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .presentationtext{
-            order: 1;
-            margin-top: 40px;
-        }
-        
-        .presentationtitle{
-            order: 2;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        #top{
-            padding-top: 50px;
-            padding-bottom: 150px;
-            height: auto;
-        }
-        
-        .resume{
-            display: block;
-            margin: auto;
-            font-size: 100%;
-            padding: 7px;
-            border-radius: 8px;
-            width: 40%;
-        }
-        
-        
-        .arrow {
-          box-sizing: border-box;
-          height: 4vw;
-          width: 4vw;
-          border-style: solid;
-          border-color: white;
-          border-width: 0px 5px 5px 0px;
-          transform: rotate(45deg);
-            position: absolute;
-            bottom: 10%;  
-        }
-        
-        a.resume{
-            text-align: center;
-        }
-        
-        .titleCard{
-            font-size: 140%;
-        }
-        
-        .textCard{
-            font-size: 110%;
-        }
-        
-        .icon{
-            float: right;
-            margin-right: 5%;
-            text-decoration: none;
-            color: #B59DA4;
-            margin-top: -5px;
-        }
-        
-        .name{
-            font-size: 30px;
-        }
-        
-        .skilllist{
-            line-height: 30px;
-            columns: 2;
-          -webkit-columns: 2;
-          -moz-columns: 2;
-        }
-
-
-}
 
 @media only screen
     and (min-width : 960px){
+
+                 name{
+                    font-weight: bold;
+                    font-size: 200%;
+                }
+
+
+                .aboutLine{
+                    margin-left: 0;
+                    width: 50px;
+                }
+
+                .titleAbout{
+                    font-size: 200%;
+                   color: white;
+                }
+
+                #AboutMe img{
+                    width: 30%;
+                    height: auto;
+                    margin-top:  50px;
+                    margin-right: 20px;
+                    float: left;
+               
+                }
         
-    .topnav .icon {
-      display: none;
-    }
+                #AboutMe{
+                    padding-left: 20%;
+                }
+
+
+                .textAbout{
+                    margin-top: 50px;
+                    font-size: 100%;
+                    line-height: 25px;
+                    margin-right: 15%;
+                    color: white;
+                }
+
+                .skilllist{
+                    line-height: 30px;
+                    columns: 2;
+                  -webkit-columns: 2;
+                  -moz-columns: 2;
+                }
         
-       
-.navMenu{
-    padding: 20px;
-    font-size: 150%;
-    text-align: center;
-    transition: all .2s ease-in-out;
-}
+                .logo {
+                    display: inline-block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: 30px; 
+                }
 
+                #imageContact{
+                    text-align:center;
+                }
         
-    .wrapperCard{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto auto;
-        height: 750px;
-        padding-bottom: 100px;
-    }
-
-
-
-.name{
-    font-weight: bold;
-    font-size: 200%;
-}
-
-
-.aboutLine{
-    margin-left: 0;
-    width: 50px;
-}
-
-.titleAbout{
-    font-size: 200%;
-    color: #B59DA4;
-}
-
+                .icon {
+                  display: none;
+                }
         
-a.navMenu:hover{
-    color:  #393B3B;
-    transform: scale(1.5);
+                nav{
+                    width: 100%;
+                    height: 10%;
+                    display: block;
+                    margin: auto;
+                    position: fixed;
+                    z-index: 1;
+                   background-color: #2B303A;
+                }
+
+                nav ul{
+                    margin: 0;
+                    text-align: right; 
+
+                }
+
+                nav li{
+                    display: inline-block;
+                   padding: 40px;
+                   padding-top: 30px;
+                }
+
+                nav a{
+                    color: #ffff;
+                    font-size: 20px;
+                    position: relative
+                }
+
+
+                nav a::after {
+                    content: '';
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 5px;
+                    width: 0;
+                    height: 2px;
+                    background: #F6F930;
+                    transition: width .5s;
+                }
+
+                nav a:hover::after {
+                    width: 100%;
+                    transition: width .5s;
+                }
+
+                nav a:hover {
+                    color: #F6F930;
+                }
+
+
 }
-
-.right{
-    float: right;
-}
-
-.greeting{
-    font-size: 350%;
-    padding-top: 100px;
-    text-align: center;
-}
-
-
-.presentationtitle{
-    width: 100%;
-    top: 450px;
-    position: absolute;
-    margin-left: 20px;
-}
-
-.presentationtitle span{
-    font-size: 110%;   
-}
-
-.presentationtext{
-    margin-top: 190px;
-    margin-left: 10px;
-    font-size: 20px; 
-    line-height: 40px;
-    width: 100%;
-}
-
-.resume{
-    position: absolute;
-    font-size: 120%;
-    padding: 7px;
-    margin-top: 120px;
-    margin-left: 75%; 
-    border-radius: 8px;
-}
-
-.wrapperAbout{
-     margin-left: 20% ;
-}
-
-.aboutPic{
-    width: 30%;
-    height: auto;
-    margin-top:  50px;
-    margin-right: 20px;
-    float: left;
-}
-    
-
-.textAbout{
-    margin-top: 50px;
-    font-size: 100%;
-    line-height: 25px;
-    margin-right: 15%;
-}
-
-.skilllist{
-    line-height: 30px;
-    columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-}
-        
-.card{
-    width:450px;
-    height: 300px;
-    box-shadow: 5px 10px 6px #5A5E61;
-    margin: auto;
-    display: flex;
-    position: absolute;
-   
-}    
-
-.card1, .card3{
-   right: 10px;  
-}
-
-.card2, .card4{
-    left: 10px;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  transition: .5s ease;
-  backface-visibility: hidden;
-    
-}
-
-
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-    left: 30%;
-    margin-left: 20%;
-    width: 90%;
-    top: 50%;
-    height: 90%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-
-.card:hover .image {
-  opacity: 0.3;
-}
-
-.card:hover .middle {
-  opacity: 1;
-}
-
-.logo {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 30px; 
-}
-
-#imageContact{
-    text-align:center;
-}
-
-        
-        
-.arrow {
-  box-sizing: border-box;
-  height: 4vw;
-  width: 4vw;
-  border-style: solid;
-  border-color: white;
-  border-width: 0px 5px 5px 0px;
-  transform: rotate(45deg);
-    position: absolute;
-    top: 85vh;  
-}
-}
-
-
-/* PROJECT 1 CSS */
 
 * {box-sizing: border-box}
 .mySlides {display: none}
@@ -1299,30 +476,30 @@ a.navMenu:hover{
     display: inline-block;
     margin-left: 30px;
     margin-bottom: 50px;
-    border: solid 1px black;
+    border: solid 1px #832232;;
     width: 200px;
     padding: 10px;
     border-radius: 4px;
-    
 }
 
 .buttonBack:hover{
-    background-color: #F8F8F8;
+    background-color: #832232;
+     transition: 0.9s ease;
 }
 
 .buttonBack:link{
-    color: black;
+    color:#832232;
     text-decoration: none;
 }
 
 /* visited link */
 .buttonBack:visited {
-  color: black;
+  color: #832232;;
 }
 
 /* mouse over link */
 .buttonBack:hover {
-  color: black;
+  color: #2B303A;
 }
 
 /* selected link */
@@ -1365,14 +542,14 @@ a.navMenu:hover{
 
 /* Caption text */
 .caption {
-  color: darkgray;
+  color: white;
   font-size: 15px;
   padding: 8px 12px;
   position: relative;
   bottom: 8px;
   width: 80%;
   text-align: center;
-  background-color: white;
+  background-color: #2B303A;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -1428,3 +605,4 @@ a.navMenu:hover{
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
