@@ -200,6 +200,10 @@ footer p{
         .centerSquareHeader{
             display: none;
         }
+       
+       #Projects h1{
+          padding-top: 200px;
+       }
         
         header{
             height: auto;
