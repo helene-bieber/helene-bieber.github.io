@@ -5,7 +5,7 @@ html {
 body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #832232;
+    background-color: #e9eaeb;
 }
 
 .bodyProject{
@@ -23,6 +23,14 @@ a{
     color: inherit;
 }
 
+#AboutMe p{
+    color: #2B303A;
+}
+
+.q{
+    color: #832232;
+    font-weight: bold;
+}
 
 .centerSquareHeader{
     background-image: url(image/BgBlur.png);
@@ -45,6 +53,10 @@ h1{
     margin-left: 20px;
 }
 
+.aboutTitle{
+    color: #832232;
+}
+
 h2{
      color: white;
     font-weight: 900;
@@ -52,6 +64,11 @@ h2{
     font-size: 40px;
     margin-top: 5%;
 
+}
+
+#AboutMe img{
+     border: 5px solid #F6F930;
+     transform: rotate(-5deg); 
 }
 
 .presentationtitle{
@@ -64,20 +81,67 @@ h2{
 
 #AboutMe{
     padding-top: 15%;
-    background-color: #832232;
-    padding-bottom: 20px;
+    background-color: #e9eaeb;
+   
 }
 
 
 .skills{
-    margin-left: 20%;
+   
     margin-top: 100px;
     clear: both;
-    color: white;
+    color: #2B303A;
+}
+
+.skills p{
+   -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2B303A;
+    text-align: center;
+    color: #F6F930 !important;
+    margin-top: 100px;
+    font-size: 200%;
 }
 
 .skilllist{
+    clear: both;
     list-style-type: none;
+    
+   
+}
+
+.skilllist li{
+    border: 2px #2B303A solid;
+    border-radius: 50%;
+    width: auto;
+    display: inline-block;
+    margin: 5px;
+    
+}
+
+.small{
+    padding: 10px;
+}
+
+.big{
+    padding: 35px;
+}
+
+.middle{
+    padding: 23px;
+}
+
+.yellow{
+    background-color: #F6F930;
+}
+
+.red{
+    background-color: #832232;
+    color: white;
+}
+
+.dark{
+    background-color: #2B303A;
+    color: white;
 }
 
 
@@ -210,8 +274,12 @@ footer p{
             padding-bottom: 20px;
         }
         
-        .aboutLine{
-            margin-left: 20px;
+        #AboutMe img{
+            width: 60%;
+            height: auto;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
         }
         
          h1{
@@ -243,6 +311,17 @@ footer p{
 
 @media only screen
     and (max-width : 959px){
+        #AboutMe img{
+            width: 40%;
+            height: auto;
+             display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        #AboutMe{
+            padding-top: 25%;
+        }
 
   .topnav a.icon {
             float: right;
@@ -251,6 +330,10 @@ footer p{
             color: white;
             margin-right: 20px;
             margin-top: 0;
+        }
+        
+        .aboutTitle{
+            display: none;
         }
         
         .topnav.responsive {position: relative;}
@@ -294,14 +377,6 @@ footer p{
             margin: 0;
         }
         
-
-        #AboutMe img{
-            width: 40%;
-            height: auto;
-            display: block;
-            margin: auto;
-           margin-top: 60px;
-        }
      
         
         .aboutLine{
@@ -355,6 +430,15 @@ footer p{
                     font-weight: bold;
                     font-size: 200%;
                 }
+        
+                  .aboutTitle{             
+                    position: fixed;
+                    transform: rotate(270deg);
+                    top: 50%;
+                    padding: 0;
+                    left: -180px;
+                    z-index: -1;
+                }
 
 
                 .aboutLine{
@@ -368,16 +452,20 @@ footer p{
                 }
 
                 #AboutMe img{
-                    width: 30%;
+                    width: 33%;
                     height: auto;
-                    margin-top:  50px;
-                    margin-right: 20px;
+                    margin-top: 50px;
+                    margin-right: 60px;
+                    margin-bottom: 30px;
                     float: left;
-               
+                   
                 }
         
                 #AboutMe{
                     padding-left: 20%;
+                     z-index: -2;
+                    position: relative;
+                    padding-bottom: 100px;
                 }
 
 
@@ -389,12 +477,7 @@ footer p{
                     color: white;
                 }
 
-                .skilllist{
-                    line-height: 30px;
-                    columns: 2;
-                  -webkit-columns: 2;
-                  -moz-columns: 2;
-                }
+               
         
                 .logo {
                     display: inline-block;
