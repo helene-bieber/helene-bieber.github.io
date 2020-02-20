@@ -104,45 +104,72 @@ h2{
 
 .skilllist{
     clear: both;
-    list-style-type: none;
-    
-   
+    list-style-type: none;  
 }
 
 .skilllist li{
-    border: 2px #2B303A solid;
     border-radius: 50%;
     width: auto;
     display: inline-block;
     margin: 5px;
-    
 }
 
 .small{
     padding: 10px;
 }
 
-.big{
-    padding: 35px;
-}
 
 .middle{
     padding: 23px;
 }
 
-.yellow{
-    background-color: #F6F930;
-}
 
 .red{
-    background-color: #832232;
-    color: white;
+    border: 2px solid #832232;
+    color: #832232;
+    animation:colorChange1 5s;
+    -moz-animation:colorChange1 5s infinite; /* Firefox */
+    -webkit-animation:colorChange1 5s infinite; /* Safari and Chrome */
 }
 
 .dark{
-    background-color: #2B303A;
-    color: white;
+    border: 2px solid #2B303A;
+    color: #2B303A;
+    animation:colorChange2 5s;
+    -moz-animation:colorChange2 5s infinite; /* Firefox */
+    -webkit-animation:colorChange2 5s infinite; /* Safari and Chrome */
 }
+
+
+@-moz-keyframes colorChange1 /* Firefox */ {
+    0% {border: 2px solid #832232; color: #832232; }
+    50% {border: 2px solid #2B303A; color: #2B303A;}
+    100% {border: 2px solid #832232; color: #832232;}
+}
+
+@-webkit-keyframes colorChange1 /* Safari and Chrome */ {
+     0% {border: 2px solid #832232; color: #832232;}
+    50% {border: 2px solid #2B303A; color: #2B303A;}
+    100% {border: 2px solid #832232; color: #832232;}
+}
+
+@-moz-keyframes colorChange2 /* Firefox */ {
+    0% {border: 2px solid #2B303A; color: #2B303A;}
+    50% {border: 2px solid #832232; color: #832232;}
+    100% {border: 2px solid #2B303A; color: #2B303A;}
+}
+
+@-webkit-keyframes colorChange2 /* Safari and Chrome */ {
+     0% {border: 2px solid #2B303A; color: #2B303A;}
+    50% {border: 2px solid #832232; color: #832232;}
+    100% {border: 2px solid #2B303A; color: #2B303A;}
+}
+
+.big{
+    padding: 35px;
+}
+
+
 
 
 #Projects{
