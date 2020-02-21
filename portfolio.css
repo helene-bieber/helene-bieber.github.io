@@ -113,14 +113,15 @@ h2{
     display: inline-block;
     margin: 5px;
 }
-
 .small{
     padding: 10px;
+     font-size: 80%;
 }
 
 
 .middle{
     padding: 23px;
+     font-size: 100%;
 }
 
 
@@ -167,8 +168,8 @@ h2{
 
 .big{
     padding: 35px;
+    font-size: 120%;
 }
-
 
 
 
@@ -570,6 +571,7 @@ footer p{
                 nav a:hover {
                     color: #F6F930;
                 }
+    
 
 
 }
